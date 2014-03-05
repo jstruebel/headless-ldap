@@ -1,6 +1,8 @@
 #!/bin/bash -e
 # generic preseeding of inithooks.conf
 
+[ ! -e $INITHOOKS_CONF ] && exit 0
+
 MASTERPASS=$(mcookie | cut --bytes 1-8)
 
 cat>$INITHOOKS_CONF<<EOF
