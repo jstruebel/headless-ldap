@@ -9,7 +9,7 @@ cat>$INITHOOKS_CONF<<EOF
 export LDAP_BASEDN=DEFAULT
 export LDAP_BINDDN="cn=nss_pam,dc=example,dc=com"
 export LDAP_PASS=$MASTERPASS
-export LDAP_SERVER=127.0.0.1
+export LDAP_SERVER=ldaps://127.0.0.1
 export SAMBA_BINDDN="cn=samba,dc=example,dc=com"
 export SAMBA_PASS=$MASTERPASS
 EOF
